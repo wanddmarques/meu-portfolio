@@ -6,6 +6,8 @@ HTML5: Semântica Forte: Excelente uso das tags nativas do HTML5 para melhor ace
 
 CSS3: Configurações Globais e Importações - Barra de Navegação Cabeçalho / Hero Section - Estilização de Seções Gerais - Seção "Sobre Mim Cards e Serviços - Seção de Projetos -Seção de Contato e Links - Rodapé
 
+JAVASCRIPT: Usando uma biblioteca Finisher Header. um plugin JavaScript popular usado para criar efeitos visuais animados e dinâmicos em fundos de cabeçalhos (headers) de sites.
+
 Destaques do Projeto
 Layout 100% Responsivo: Adaptado para celulares, tablets e desktops.
 Design Autoral & Moderno: Foco em usabilidade, hierarquia visual e navegação fluida

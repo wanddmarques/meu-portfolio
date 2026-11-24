@@ -1,0 +1,606 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Righteous&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #172727;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5%;
+  background-color: #264141;
+  z-index: 1000;
+}
+
+.logo h1 {
+  font-family: "Audiowide", sans-serif;
+  font-size: clamp(30px, 8vw, 60px);
+  color: #89a469;
+  margin: 0;
+  letter-spacing: -1px;
+  text-shadow: 6px 6px 6px #000000;
+}
+
+.menu {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  font-family: "Audiowide", sans-serif;
+  font-weight: bold;
+  margin-top: 2%;
+  padding-right: 8%;
+}
+
+.menu a {
+  color: #020403;
+  text-decoration: none;
+  font-size: 20px;
+  padding-right: 0;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #89a469;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 2% 5%;
+  min-height: 100vh;
+}
+
+.cabecalho {
+  flex: 40%;
+  color: #cbd5e1;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.cabecalho h2 {
+  font-family: "Righteous", sans-serif;
+  font-size: clamp(50px, 10vw, 70px);
+  font-weight: bold;
+  padding-top: 3%;
+  color: #89a469;
+}
+
+.break-line {
+  display: block;
+  color: #000000;
+}
+
+.img-cabecalho {
+  flex: 40%;
+  text-align: end;
+  margin-top: 5%;
+  padding-top: 5%;
+  padding-left: 1%;
+}
+
+/* SECTION */
+section {
+  min-height: 100vh;
+  text-align: left;
+  padding: 80px 5%;
+}
+
+section h2 {
+  font-family: "Righteous", sans-serif;
+}
+
+section p {
+  font-size: 20px;
+  font-family: "Righteous", sans-serif;
+}
+
+/* CARDS */
+.servicos {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+#home {
+  display: flex;
+}
+
+#sobre {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 5% 8%;
+  padding-bottom: 20%;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.sobre-min h2 {
+  font-size: 25px;
+  color: #89a469;
+  background-color: #111827;
+  font-family: "Righteous", sans-serif;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 50px #020403;
+}
+
+.card {
+  flex: 1 1 300px;
+  transition: 0.4s;
+  box-shadow: 0 0 15px #89a469;
+  position: relative;
+  margin-top: 1%;
+}
+
+.card h2 {
+  color: #040203;
+}
+
+.card p {
+  color: #020403;
+}
+
+.card img {
+  color: #040202;
+}
+
+.card:hover {
+  background: #89a469;
+  border-radius: 20px;
+}
+
+.card img {
+  margin: 10px;
+}
+
+.sobre-foto {
+  display: flex;
+  justify-content: center;
+}
+
+.foto-perfil {
+  width: 270px;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 5px #000000;
+  transition: 0.4s;
+}
+
+.foto-perfil:hover {
+  transform: scale(1.03);
+}
+
+#projetos {
+  padding: 100px 8%;
+  padding-top: 3%;
+}
+
+#projetos h2 {
+  font-size: 25px;
+  padding-top: 10%;
+  color: #89a469;
+  background-color: #111827;
+  text-align: initial;
+  margin: 0 auto;
+  width: 100%;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 50px #020403;
+}
+
+#projetos p {
+  font-size: 25px;
+  padding-bottom: 6%;
+  padding-top: 6%;
+  color: #020403;
+  text-align: initial;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 2%;
+}
+
+.card {
+  flex-direction: row;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  width: 320px;
+  min-height: 450px;
+  background-color: #111827;
+  border-radius: 18px;
+  cursor: default;
+}
+
+.botao-projeto {
+  box-shadow: 3px 4px 0px 0px #000000;
+  background: linear-gradient(to bottom, #89a469 5%, #89a469 100%);
+  background-color: #000000;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-family: "Righteous", sans-serif;
+  font-size: 20px;
+  padding: 7px 25px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #000000;
+  transition: 0.05s ease;
+  box-shadow: 0 0 12px #89a469;
+}
+
+.botao-projeto:active {
+  transform: translate(4px, 6px);
+  box-shadow: 0px 0px 0px 0px #000000;
+}
+
+.login-wrap {
+  width: 100%;
+  margin: auto;
+  max-width: 525px;
+  min-height: 670px;
+  position: relative;
+  background: url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg)
+    no-repeat center;
+  box-shadow:
+    0 12px 15px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.login-html {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 90px 70px 20px 70px;
+  background: #172727;
+  font-family: "Righteous", sans-serif;
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transition: all 0.4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check {
+  display: none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button {
+  text-transform: uppercase;
+}
+.login-html .tab {
+  font-size: 22px;
+  margin-right: 5px;
+  padding-bottom: 60px;
+  margin: 0 15px 10px 0;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab {
+  color: #89a469;
+  border-color: #89a469;
+}
+.login-form {
+  min-height: 345px;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+.login-form .group {
+  margin-bottom: 15px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button {
+  width: 100%;
+  color: #fff;
+  display: block;
+}
+.login-form .group .input,
+.login-form .group .button {
+  border: none;
+  padding: 15px 20px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.login-form .group input[data-type="password"] {
+  -text-security: circle;
+  -webkit-text-security: circle;
+}
+.login-form .group .label {
+  color: #aaa;
+  font-size: 12px;
+}
+.login-form .group .button:active {
+  transform: scale(0.97);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
+  background: #89a469;
+}
+.login-form .group label .icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  position: relative;
+  display: inline-block;
+  background: #89a469;
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  transition: all 0.2s ease-in-out 0s;
+}
+.login-form .group label .icon:before {
+  left: 3px;
+  width: 5px;
+  bottom: 6px;
+  transform: scale(0) rotate(0);
+}
+.login-form .group label .icon:after {
+  top: 6px;
+  right: 0;
+  transform: scale(0) rotate(0);
+}
+.login-form .group .check:checked + label {
+  color: #fff;
+}
+.login-form .group .check:checked + label .icon {
+  background: #89a469;
+}
+.login-form .group .check:checked + label .icon:before {
+  transform: scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after {
+  transform: scale(1) rotate(-45deg);
+}
+.login-html
+  .sign-in:checked
+  + .tab
+  + .sign-up
+  + .tab
+  + .login-form
+  .sign-in-htm {
+  transform: rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm {
+  transform: rotate(0);
+}
+
+.hr {
+  height: 2px;
+  margin: 60px 0 40px 0;
+  background: #89a469;
+}
+.foot-lnk {
+  text-align: center;
+}
+
+/* Variáveis globais para facilitar a customização */
+:root {
+  --bg-section: #172727; /* Fundo escuro elegante */
+  --bg-card: #89a469; /* Fundo dos cards */
+  --bg-card-hover: #698845; /* Fundo do card ao passar o mouse */
+  --text-primary: #000000; /* Texto principal */
+  --accent-color: #000000; /* Cor de destaque (Azul) */
+  --border-color: #000000;
+}
+
+/* Rolagem suave e ajuste para o ID da seção */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Evita que o topo da página encoste na seção ao clicar no link */
+}
+
+/* Estilização da Seção */
+.redes-sociais {
+  background-color: var(--bg-section);
+  padding: 80px 10px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.redes-container {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.redes-container h2 {
+  color: var(--text-primary);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  letter-spacing: -0.5px;
+}
+
+/* Layout dos cards usando Flexbox */
+.redes-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Estilo individual de cada card de rede social */
+.rede-item {
+  flex: 1 1 200px;
+  max-width: 220px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+/* Efeito de destaque ao passar o mouse */
+.rede-item:hover {
+  background-color: var(--bg-card-hover);
+  transform: translateY(-5px);
+  border-color: #698845;
+  box-shadow: 0 10px 25px -5px rgba(250, 0, 0, 0.3);
+}
+
+/* Estilização do link interno */
+.rede-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  text-decoration: none;
+  color: var(--text-primary);
+  width: 100%;
+  height: 100%;
+}
+
+.rede-item span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 0.5px;
+}
+
+/* Responsividade para telas menores (smartphones) */
+@media (max-width: 480px) {
+  .redes-lista {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rede-item {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+
+/* Estilização da Seção de Redes Sociais */
+.redes-sociais {
+  background-color: #172727;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.redes-container {
+  width: 100%;
+  max-width: 525px;
+  text-align: center;
+  font-family: "Righteous", sans-serif;
+}
+
+.redes-container h2 {
+  color: #89a469;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.redes-lista {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.rede-item {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.rede-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.rede-item span {
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.rede-icon {
+  color: #89a469;
+}
+
+/* Efeito ao passar o mouse (Hover) */
+.rede-item:hover {
+  background-color: #89a469;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(137, 164, 105, 0.3);
+  text-shadow: 0px 1px 0px #000000;
+  transition: 0.05s ease;
+  box-shadow: 0 0 12px #89a469;
+}
+
+.rede-item:hover a,
+.rede-item:hover .rede-icon {
+  color: #000000;
+}
+
+/* Efeito de clique (Active) */
+.rede-item:active {
+  transform: scale(0.95);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 10%;
+  color: #89a469;
+  font-size: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
